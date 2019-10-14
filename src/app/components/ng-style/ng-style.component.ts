@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template:
   `
     <p [style.fontSize.px]= "size">
-      Hola mundo... esta es una etiqueta
+      Hola mundo... este es un párrafo que permite ajustar el tamaño de la letra en tiempo de ejecución
     </p>
 
     <button class="btn btn-primary" (click) = "size = size + 5" >
@@ -16,17 +16,17 @@ import { Component, OnInit } from '@angular/core';
       <i class="fa fa-minus"></i>
     </button>
 
-
-
   `,
   styles: []
 })
 export class NgStyleComponent implements OnInit {
 
-  size = 10;
+  size = 20;
 
 
-  constructor() { }
+  constructor() { 
+
+  }
 
   ngOnInit() {
   }
